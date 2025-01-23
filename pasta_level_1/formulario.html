@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--utf-8= entrar na linguagem "nonecode" universal-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="TituSubtitu"><!--meio que divide um codigo (colocar varios elementos) [UMA CAIXA]-->
+        <h1 id="titulo">FALE A VERDADE</h1>
+        <p id="subtitulo">Seja sincera, complete as informações</p>
+        <br><!--pula de linha--> 
+    </div>
+
+    <form><!--formulario-->
+          <fieldset class="grupo"> <!--usado para separar um campo ou juntar 2 campos (div´s, sections) CAMPO DE NOME-->
+            <div class="campo"><!--Esse campo será sempre composto pela label e input-->
+                <label for="nome">Nome</label><!--explicacão do campo-->
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+          </fieldset><!--faz uma caixa e juntando-os por uma linha-->
+
+          <DIV class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </DIV>
+
+          <div class="labels">
+            <label>Você gosta do Leo?</label><br>
+            <label><!--teve que se criar uma LABEL para que o INPUT fique dentro para que possa escrever o TEXTO FORA DO INPUT-->
+                <input type="radio" name="naoGosta" value="nao_sei" checked>Não sei
+            </label><br>
+            <label>
+                <input type="radio" name="naoGosta" value="nao">Não
+            </label><br>
+            <label>
+                <input type="radio" name="naoGosta" value="sim">Sim
+            </label>
+          </div>
+
+          <div class="campo">
+            <label for="senioridade">Por que você decidiu ficar com ele?</label>
+            <select id="senioridade"><!--É o campo que será clicado-->
+                <option selected disabled value="">Selecione</option><!--SELECTED: quer dizer que estará selecionado este / DISABLED: para dizer que está opção não esteja ativada VALUE: não vai estar equivalente a nada-->
+                <option>Dó</option><!--cada opção que sera colocada dentro do campo-->
+                <option>Irritante</option>
+                <option>Bunito</option>
+                <option>Feio d+</option>
+                <option>Os pais obrigaram</option>
+            </select>
+          </div>
+
+          <fieldset class="grupo">
+            <div id="check">
+                <label>O que você gostaria que ele mudasse?</label><br><br>
+                <input type="checkbox" id="checkbox1" value="menosAtencao">
+                <label for="checkbox1">Menos atenção</label><br>
+                <input type="checkbox" id="checkbox2" value="maisAtencao">
+                <label for="checkbox2">Mais atenção</label><br>
+                <input type="checkbox" id="checkbox3" value="menosSentimental">
+                <label for="checkbox3">Menos carinhoso</label><br>
+                <input type="checkbox" id="checkbox4" value="maisSentimental">
+                <label for="checkbox4">Mais carinhoso</label><br>
+                <input type="checkbox" id="checkbox5" value="menosIrritante">
+                <label for="checkbox5">Menos irritante</label><br>
+                <input type="checkbox" id="checkbox6" value="nada">
+                <label for="checkbox6">nada</label>
+            </div>
+          </fieldset>
+
+          <div class="campo">
+            <label for="reclamacoes">Se tem alguma coisa a dizer, escreva aqui:</label><br>
+            <textarea row="8" maxlength="300"  name="fale" id="reclamacoes"></textarea>
+          </div>
+          <button type="submit" value="Enviar" id="botao">Enviar</button>
+    </form>
+</body>
+</html>
