@@ -1,0 +1,46 @@
+#background1{
+    background-color: aquamarine;
+    background-image:url("../imagens/sherk1.jfif") ;/*O URL indica onde que está o arquivo*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}                          /* Para puxar uma imagem é necessario fazer uma hierarquia(CAMINHO)
+  /* OS 2 PONTOS(..) significa que tem que voltar uma pasta para trás/ a PASTA IMG/e a IMAGEM*/
+
+#campo1{
+    background-color:chartreuse;
+    background-image: url(../imagens/sherk1.jfif), url(../imagens/sherk2.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    background-image: url(../imagens/sherk2.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;/*NÃO REPETE A IMAGEM*/
+    /*background-attachment: local;/*ACOMPANHA o conteúdo*/ 
+     background-attachment: fixed;/*FIXADO mesmo rolando para baixo */
+    /*background-attachment: scroll; FORMA PADRÃO, */
+    
+}
+#campo3{
+    background-color: aqua;
+    background-clip: border-box;
+    width: 400px;
+    height: 200px;
+    
+}
+#campo4{
+    background-color: crimson;
+    background-clip: padding-box;
+    width: 400px;
+    height: 200px;
+}
+#campo5{
+    background-color: gold;
+    background-clip: content-box;
+    width: 400px;
+    height: 200px;
+}
