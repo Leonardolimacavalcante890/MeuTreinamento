@@ -1,0 +1,38 @@
+header{
+    background: fixed #1D9;
+    margin: 0; 
+    box-shadow: 10px 20px 10px green;
+    height: 20%;
+    width: 100%;
+    /*      VERTICAL/HORIZONTAL VETTICAL= PARA BAIXO É +, E PARA BAIXO -/ HORIZONTAL= PARA DIREITA É +, PARA ESQUERDA É -*/
+}
+
+nav{
+    text-align: right; /*LEVA os LINKS para a DIREITA / Também leva textos, titulos*/
+}
+.button{
+    text-decoration: none;
+    background: black;
+    color: white;
+    font-size: 21px;
+    font-family: "Abel", serif, Arial;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 20px;/*MARGIN é um tipo de respiro externo / Seria EMPURRAR o ELEMENTO para o lado DIREITO*/
+    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    line-height: 20px;/*Mexe com a linha do texto DE CIMA para BAIXO / FAZ com que CENTRALIZE o TXT*/
+    display: inline-flex;/* FAZ com que o LINK fique em LINHA, porém ADD atributos como WIDTH(LARGURA), HEIGHT(ALTURA).*/
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: black 1px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
