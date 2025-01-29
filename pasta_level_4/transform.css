@@ -1,0 +1,12 @@
+#div1{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    transform: translate(50px); /*USADO TANTO PARA O EIXO X, QUANTO PARA O EIXO Y*/
+    /*VALORES NEGATIVOS TAMBÉM PODEM SER USADOS*/
+    /*transform: translateX(); PODE SER USADO APENAS PARA O EIXO X*/
+   /*transform: translateY(); PODE SER USADO APENAS PARA O EIXO Y*/
+
+   /*A DIFERENÇA DE POSITION: RELATIVE E TRANSLATE, É QUE O TRANSLATE MOVE A DIV DE ACORDO COM O SEU TAMANHO(150PX, 150PX)/ E O RELATIVE É DE ACORDO COM O ELEMENTO PAI(BODY)*/
+   
+}
