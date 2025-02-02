@@ -1,0 +1,41 @@
+body{
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes teste { /*@keyframes é feita para criar uma animação onde o nome é TESTE*/
+    0%{/* A ANIMAÇÃO começa do 0% até o 100% / onde você pode colocar mais detalhes ex: 15%, 20%*/
+        transform: scale(1); 
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+#btn{
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    border-bottom: 4px solid #999;    
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 100px;
+    transition: all 0.5s linear;/*É colocado DENTRO do ELEMENTO, não no hover ou qualquer outro tipo de ELEMENTO*/
+/*1º o elemento que ele irá monitorar/2º o tempo de transição/3º o tipo de TRANSIÇÃO */
+}
+
+#btn:hover{
+    background-color: gray;
+    color: white;
+    border-bottom: black;
+    animation: teste 0.3s linear infinite;
+    /* 1º NOME DA ANIMAÇÃO/ TEMPO DA ANIMAÇÃO/ TIPO DE TRANSIÇÃO/ QUANTAS VEZES SERÁ REPETIDA*/
+}

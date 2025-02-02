@@ -1,0 +1,59 @@
+body{
+    background-color: #133;
+}
+
+#container{
+    display: flex;/*Tem como PADRÃO ocupar toda a largura da tela e responsivo por padrão*/
+    gap: 10px 10px;/*Usado para dar ESPAÇO entre eles*/
+    /*HORIZONTAL / VERTICAL*/
+    flex-direction: row;/*Usado no PAI e vem por padrão o tipo ROW(LINHA) da esquerda para a direita*/
+    flex-direction: row-reverse;/*Inverte a ordem, comecando do 6 ao 1(HORIZONTAL) da direita para esquerda*/
+    flex-direction: column;/*Deixa em forma de coluna(VERTICAL) de cima para baixo*/
+    flex-direction: column-reverse;/*Inverte a ordem, comecando do 6 ao 1(VERTICAL) de baixo para cima*/
+
+    flex-wrap: nowrap;/* (POR PADRÃO JÁ VEM COM NOWRAP)Usado para que não haja está diminuição e sim os elementos sejam levados para baixo*/
+    flex-wrap: wrap;/* Usado para que os itens sejam levados para baixo com a diminuição da tela(QUEBRAR)*/
+    flex-wrap: wrap-reverse;/*Usado para que os itens se quebrem de baixo para cima (QUEBRAR ALCONTRARIO)*/
+    
+    flex-flow:column wrap ;/*Um atalho do FLEX-DIRECTION e FLEX-WRAP*/
+    /*primeiro define se será ROW ou COLUMN, e em segundo se será QUEBRADO ou NÃO(WRAP)*/
+
+    justify-content: center;/*Usado no PAI(ALINHA os ELEMENTOS HORIZONTALMENTE)*/
+    align-items: center;/*Usado no PAI(ALINHA os ELEMENTOS VERTICALMENTE)*/
+
+
+    width: 800px;
+    height: 800px;
+    background-color: aliceblue;
+}
+
+.itens{ /*Tem como PADRÃO ocupar só o espaço que o item está contendo(O QUE ESTÁ DENTRO DOS FILHOS)*/
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.item1{
+    flex-grow: 1;/*Determina a OCUPAÇÃO do ESPAÇO que sobrou no FLEXBOX */
+}
+
+.item2{
+    flex-basis: 20px;/*Serve para DEFINIR um TAMANHO ESPECIFICO em PORCENTAGEM, PIXELS, REM*/
+}
+
+.item3{
+    flex:1 1 100px;/*JUNTA os 3 TIPOS (GROW/SHRINK/BASIS) nesta mesma ORDEM*/
+}
+
+.item5{
+    align-self: center;/*USADO PARA APENAS UM ELEMENTO*/
+    order: 2;/*USADO PARA DIZER A ORDEM DE CADA ELEMENTO(NECESSARIO COLOCAR EM TODOS)*/
+}
+
+.item4{
+    flex-grow: 2;/*Terá + ESPAÇO que o ITEM 4*/
+}
+
+.item6{
+    flex-shrink: 1;/*Terá MENOS ESPAÇO que os outros no FLEXBOX*/
+}
