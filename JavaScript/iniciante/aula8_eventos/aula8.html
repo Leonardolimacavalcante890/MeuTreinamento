@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aula8.css" type="text/css">
+    <title>JavaScript</title>
+</head>
+ <body>
+    onmouseup="mouseClicadoParaCima" onmousedown="mouseClicadoParaBaixo()"  
+    ONMOUSEDOWN = o mouse quando clicado irá aparecer um ALERTA falando que ele clicou na BODY
+    ONMOUSEUP = o mouse quando parar de clicar/ SOLTA O CLICK, ira aparecer um ALERTA falando você parou de clicar na body
+    
+    <h1>Aprendendo JS</h1>
+    <p id="texto"></p>
+    
+    
+    
+    <button onclick="botaoOnclick()">clique aqui</button> Apenas um click para acionar o EVENTO
+
+    
+    
+    <button ondblclick="botaoDBLclick()">clique aqui</button> 2 clicks para acionar o EVENTO
+
+    
+    
+    
+    <div id="elemento1" onmouseout="viraAzul" onmouseover="viraVermelho()"></div> 
+    ONMOUSEOVER = quando o mouse passa por cima, a cor da DIV muda para VERMELHO, 
+    ONMOUSEOUT = quando o mouse sai de cima do elemento, a cor da DIV pode mudar para outra cor ou a mesma
+
+    <!-- <div id="elemento2" onmousemove="adicionaTexto()"></div> ONMOUSEMOVE = quando o mouse se move, ele repete o que estavá sendo pedido SEM LIMITE -->
+
+    
+    
+    <input type="text" id="campoTexto" placeholder="Digite aqui"> <!--placeholder serve para colocar um texto no fundo do input para que não fique em branco -->
+
+    
+    
+    
+    <script src="aula8.js"></script>
+</body>
+</html>
