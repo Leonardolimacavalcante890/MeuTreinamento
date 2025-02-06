@@ -48,3 +48,54 @@ function mouseclicadoParaBaixo(){
 }
 
 //ONFOCUS
+function limpaTexto(){
+    document.getElementById("campoTexto").value = ""; //Como é um campo de texto, "ou por ser INPUT", não será innerHTML, mas sim VALUE
+    //As ASPAS VAZIAS é para mostrar que quando FOCADO ficará VAZIO
+}
+
+
+//ONCHANGE
+function mudar(){
+    let muda = document.getElementById("campoTexto1");
+    muda.style.borderColor = "red";
+}
+
+
+//ONBLUR
+function desfocado(){
+    alert("Acionou o evento ONBLUR");
+    document.body.style.backgroundColor = "black"; 
+}
+
+
+//ONKEYPRESS
+function teclPressionada(){
+    let input = document.getElementById("campoTexto3").value; //Está pedindo o VALOR escrito no CAMPO
+    console.log(input); //REPASSAR o que foi DIGITADO 
+}
+
+
+//ONKEYDOWN
+function teclDespressionada(){
+    let input = document.getElementById("campoTexto3").value; //Está pedindo o VALOR escrito no CAMPO
+    console.log(input); //REPASSAR o que foi DIGITADO 
+}
+
+
+//ONKEYUP
+function teclado(){
+    let input = document.getElementById("campoTexto3").value; //Está pedindo o VALOR escrito no CAMPO
+    console.log(input); //REPASSAR o que foi DIGITADO 
+}
+
+
+//ONLOAD
+function corpo(){
+    alert("A pagina foi carregada");
+}
+
+
+//ONRESIZE
+function redimencionamento(){
+    alert("Houve um REDIMENCIONAMENTO");
+}
