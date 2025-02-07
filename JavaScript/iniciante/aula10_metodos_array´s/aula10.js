@@ -83,3 +83,12 @@ function menorNumero(array){
 }
 
 document.getElementById("texto").innerHTML = menorNumero(numeros);//Mostrará o MENOR NUMERO DA ARRAY
+
+
+//METODO FILTRAÇÃO
+const maior20 = numeros.filter(filtragem);
+
+function filtragem(value, index, array){
+    return value > 20;  
+}//Value são os itens dentro da Array
+
