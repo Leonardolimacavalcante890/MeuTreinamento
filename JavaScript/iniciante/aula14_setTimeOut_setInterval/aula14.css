@@ -1,3 +1,17 @@
 body{
     text-align: center;
 }
+
+.stop{
+    padding: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}
+
+.start{
+    padding: 20px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
